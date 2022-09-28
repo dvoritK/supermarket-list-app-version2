@@ -1,0 +1,14 @@
+p {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  color: #fff;
+  background-color: #444;
+}
+@media (max-width: 75em) {
+  p {
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+}

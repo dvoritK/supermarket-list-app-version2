@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+}
+
+.Form {
+  padding: 6rem 6rem 0 6rem;
+  display: grid;
+  grid-template-columns: repeat(5, 20rem);
+  column-gap: 4rem;
+  row-gap: 2rem;
+  justify-content: center;
+}
+.input-box,
+.btn-submit {
+  max-width: 100%;
+  padding: 1rem 2rem;
+  border: 0.2rem solid rgba(68, 68, 68, 0);
+  border-radius: 5rem;
+  box-shadow: 0.2rem 0.5rem 0.2rem rgba(68, 68, 68, 0.535);
+}
+.btn-submit {
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: #444;
+  color: #f3ecdb;
+}
+ul {
+  text-align: right;
+  margin: 4rem 8rem;
+  list-style: none;
+}
+
+@media (max-width: 75em) {
+  .Form {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    padding: 4rem 4rem 0 4rem;
+  }
+  .btn-submit {
+    grid-column: 2/4;
+    width: 50%;
+    justify-self: center;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+  ul {
+    margin: 2rem 6rem;
+  }
+  .input-box,
+  .btn-submit {
+    padding: 0.7rem 1rem;
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 56em) {
+  .input-box,
+  .btn-submit {
+    padding: 0.5rem 0.8rem;
+    max-width: 85%;
+  }
+  ul {
+    font-size: 1.4rem;
+  }
+  .Form {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .btn-submit {
+    grid-column: -2/-1;
+    width: 100%;
+    align-self: center;
+    grid-row: 4/-1;
+    font-size: 1.4rem;
+  }
+  /* .input-amount {
+    grid-column: -4/-3;
+  }
+  .input-unit {
+    grid-column: -3/-2;
+  } */
+}
+@media (max-width: 44em) {
+  .Form {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 2rem 0 2rem;
+  }
+  .btn-submit {
+    font-size: 1.2rem;
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    width: 50%;
+    justify-self: center;
+  }
+  .input-box,
+  .btn-submit {
+    padding: 0.3rem 0.5rem;
+    max-width: 70%;
+  }
+}
+/* .input-name {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .input-brand {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .input-amount {
+    grid-column: -3/-2;
+    grid-row: 2/3;
+  }
+
+  .input-unit {
+    grid-column: -2/-1;
+    grid-row: 2/3;
+  }
+  .btn-submit {
+    font-size: 1rem;
+    grid-column: 4/-1;
+    width: 100%;
+    justify-self: center; */
+
+ul {
+  margin: 1rem 4rem;
+  font-size: 1rem;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

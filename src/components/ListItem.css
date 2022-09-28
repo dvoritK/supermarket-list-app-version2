@@ -1,0 +1,105 @@
+.list-item {
+  font-size: 2rem;
+}
+
+.btn-list {
+  margin-right: 1rem;
+  border-radius: 3rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: 0.2rem solid rgba(0, 0, 0, 0);
+}
+.btn-done {
+  background-color: #b2d4b2;
+  color: #192519;
+}
+.btn-done:hover,
+.btn-done:active {
+  background-color: #d1e5d1;
+}
+
+.btn-help,
+.btn-note {
+  background-color: #ffe08e;
+  color: #191407;
+}
+.btn-note:hover,
+.btn-note:active {
+  background-color: #ffecbb;
+}
+.icon-check,
+.icon-question {
+  width: 2.4rem;
+}
+.item-list-added {
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 4rem;
+  margin: 4rem;
+  border-radius: 5rem;
+  color: #444;
+  box-shadow: 0.5rem 1 rem #444;
+}
+
+.itemNote {
+  font-style: italic;
+  opacity: 0.8;
+}
+@media (max-width: 75em) {
+  .item-string {
+    font-size: 1.6rem;
+  }
+  .itemNote {
+    font-size: 1.4rem;
+  }
+  .item-list-added {
+    margin: 2rem;
+    padding: 2rem 2rem 3rem 2rem;
+  }
+  .btn-list {
+    margin-right: 1rem;
+    border-radius: 3rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .icon-check,
+  .icon-question {
+    width: 1.6rem;
+  }
+}
+@media (max-width: 56em) {
+  .item-string {
+    font-size: 1.2rem;
+  }
+  .itemNote {
+    font-size: 1rem;
+  }
+  .btn-list {
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+  }
+  .icon-check,
+  .icon-question {
+    width: 1.2rem;
+  }
+}
+@media (max-width: 44em) {
+  .item-string {
+    font-size: 1rem;
+  }
+  .itemNote {
+    font-size: 0.8rem;
+  }
+  .btn-list {
+    font-size: 0.8rem;
+  }
+  .icon-check,
+  .icon-question {
+    width: 1rem;
+  }
+  .item-list-added {
+    margin: 1.5rem;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+  }
+}
